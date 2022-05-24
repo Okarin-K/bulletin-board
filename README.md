@@ -10,6 +10,20 @@ npm パッケージのインストール
 npm i
 ```
 
+MySQLのDockerコンテナの接続先を設定
+- .env
+```
+DATABASE_URL="mysql://root:okarin@hostname:3306/bulletin-board-db"
+```
+
+prismaの初期化
+
+```
+npx prisma migrate dev --name init
+
+npx prisma generate
+```
+
 ビルド
 
 ```
@@ -22,8 +36,6 @@ npx tsc --build
 node ./dist/server.js
 ```
 
-以上  
-npm scripts の定義は後日やります
 
 ## URI 設計
 

@@ -4,6 +4,7 @@
   "description": "掲示板",
   "main": "server.js",
   "scripts": {
+    "start": "node ./dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "okarin",
